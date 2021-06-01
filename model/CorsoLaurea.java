@@ -34,7 +34,9 @@ public class CorsoLaurea {
 			 s.aggiungiEsame(esame.getNome(), esame.getCrediti());
 		 }
 		 prossimaMatricola++;
-		 
+		
+		 System.out.println("Ciao " + nomeStudente + ", ti sei iscritto con successo");
+		
 		 immatricolati.add(s);
 	}
 	 
@@ -46,9 +48,12 @@ public class CorsoLaurea {
 			 if (studente.getNome().equals(nomeStudente)) {
 				 
 				immatricolati.remove(studente);
+				System.out.println(nomeStudente + ": TI SEI RITIRATO DAL CORSO! :(");
 			}//if
+			 
+			
 		}//for
-		
+		System.out.println(immatricolati.toString());
 	}
 	
 	

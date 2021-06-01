@@ -23,15 +23,27 @@ public class CorsoTester {
 		c.iscrivi("Francesca");
 		c.iscrivi("Filippo");
 		c.iscrivi("Franco");
+		c.iscrivi("Giovanni");
+
+		//c.ritira("Giovanni");
 		
-		c.getImmatricolati().get(0).aggiungiEsame("Array", 18);
-		c.getImmatricolati().get(1).aggiungiEsame("Array", 18);
+		//System.out.println(c.getImmatricolati().toString());
+		
+		
+		
+		for (int i = 0; i < c.getImmatricolati().size(); i++) {
+			c.getImmatricolati().get(i).aggiungiEsame("Array", 18);
+			
+		}
+		
+		
+		//c.getImmatricolati().get(1).aggiungiEsame("Array", 18);
 		//c.getImmatricolati().get(2).aggiungiEsame("Array", 18);
 		//c.getImmatricolati().get(3).aggiungiEsame("Array", 18);
-//		
+		
 		c.appello("Array", c.getImmatricolati());
 
-//		
+		
 		
 		
 		

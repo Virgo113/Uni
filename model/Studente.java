@@ -51,9 +51,9 @@ public class Studente {
 				if (voto >= 18) {
 					esame.setVoto(voto);
 					esamiSostenuti.add(esame);
-					pianoStudio.remove(esame);
+					//pianoStudio.remove(esame);
 					
-					System.out.println("sei passato con" + voto);
+					System.out.println("SEI PASSATO CON" + voto + " !!");
 				}//2 if
 				else {
 				System.out.println("NON LO HAI PASSATO!");
